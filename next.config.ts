@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: ["pdf-parse"], // ✅ allows it to work in the bundled server
+  output: 'standalone'
 };
 
 export default nextConfig;
